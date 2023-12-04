@@ -1,4 +1,4 @@
-package systems_engineering_spring.demo;
+package systems_engineering_spring;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
