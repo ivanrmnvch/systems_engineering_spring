@@ -1,0 +1,29 @@
+server:
+  port: 8090
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/secret1
+    username: 'postgres'
+    password: '1234'
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    cache: false
+    enabled: true
+  main:
+    allow-circular-references: true
+jwt:
+  secret: 1F5808F3A0310B5A008998FD3885EB64CFE2F6F9D57DA4CACE7C68B2C554B6E3
+  lifetime: 300m
+logging:
+  level:
+    root: INFO
