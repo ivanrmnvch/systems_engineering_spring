@@ -37,7 +37,6 @@ public class JwtTokenUtils {
     // дата создания токена
     Date issuedDate = new Date();
     // дата смерти токена
-
     Date expiredDate = new Date(issuedDate.getTime() + lifetime.toMillis());
 
     try {
