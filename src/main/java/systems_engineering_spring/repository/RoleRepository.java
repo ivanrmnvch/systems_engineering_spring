@@ -2,11 +2,11 @@ package systems_engineering_spring.repository;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
-import systems_engineering_spring.entities.User;
+import systems_engineering_spring.entities.Role;
 
 import java.util.Optional;
 
 @Repository
-public interface UserRepository extends CrudRepository<User, Long> {
-  Optional<User> findByLogin(String login);
+public interface RoleRepository extends CrudRepository<Role, Integer> {
+  Optional<Role> findByName(String name);
 }
